@@ -1,4 +1,4 @@
-
+"use strict";
 const color = {
   red     : '\u001b[31m',
   green   : '\u001b[32m',
@@ -29,7 +29,7 @@ var customCommands = YAML.load(__dirname+'/customCommands.yml');
 console.log(initInfos(configs))
 console.log('\n')
 
-const port = process.argv[2] || '8080'
+const port = process.argv[2] || '9876'
 const express = require('express')
 const app = express()
 app.use(express.static('src/scripts'))
